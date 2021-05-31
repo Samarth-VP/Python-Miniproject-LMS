@@ -40,7 +40,7 @@ class Library:
                 print(f"This book is already issued to {self.books_dict[issue_id]['lend_name']} on{self.books_dict[issue_id]['lend_date']}. Please check after some days or Issue a different book!")
             elif self.books_dict[issue_id]['current_status']=='Available':
                 issue_name=input("Enter your name : ")
-                if issue_name[0]=='1' or issue_name[0]=='2' or issue_name[0]=='3' or issue_name[0]=='4' or issue_name[0]=='5' or issue_name[0]=='6' or issue_name[0]=='7'or issue_name[0]=='8' or issue_name[0]=='9' or issue_name[0]=='-':
+                if '1' in issue_name or '2' in issue_name or '3' in issue_name or '4' in issue_name or '5' in issue_name or '6' in issue_name or '7' in issue_name or '8' in issue_name or '9' in issue_name or '0' in issue_name or '-' in issue_name:
                     print("You have entered wrong name! Please try again!")
                     return self.issue_book()
                 else:
